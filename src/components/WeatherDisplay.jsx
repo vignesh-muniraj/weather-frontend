@@ -25,21 +25,17 @@ export default function WeatherDisplay({ data }) {
           {data.city}
         </Typography>
 
-        {/* 3 items in a row */}
         <Box display="flex" justifyContent="space-between" mt={2}>
-          {/* Temperature */}
           <Box display="flex" alignItems="center">
             <ThermostatIcon color="error" sx={{ mr: 1 }} />
             <Typography>{data.temperature}°C</Typography>
           </Box>
 
-          {/* Humidity */}
           <Box display="flex" alignItems="center">
             <OpacityIcon color="primary" sx={{ mr: 1 }} />
             <Typography>{data.humidity}%</Typography>
           </Box>
 
-          {/* Condition */}
           <Box display="flex" alignItems="center">
             {getConditionIcon(data.condition)}
             <Typography sx={{ ml: 1 }}>{data.condition}</Typography>

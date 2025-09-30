@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
-import WbSunnyIcon from "@mui/icons-material/WbSunny"; // For sunny condition
-import OpacityIcon from "@mui/icons-material/Opacity"; // For humidity
-import ThermostatIcon from "@mui/icons-material/Thermostat"; // For temperature
-import CloudIcon from "@mui/icons-material/Cloud"; // For cloudy
-import ThunderstormIcon from "@mui/icons-material/Thunderstorm"; // For thunderstorm
-import AcUnitIcon from "@mui/icons-material/AcUnit"; // For snow
+import WbSunnyIcon from "@mui/icons-material/WbSunny"; 
+import OpacityIcon from "@mui/icons-material/Opacity"; 
+import ThermostatIcon from "@mui/icons-material/Thermostat"; 
+import CloudIcon from "@mui/icons-material/Cloud"; 
+import ThunderstormIcon from "@mui/icons-material/Thunderstorm"; 
+import AcUnitIcon from "@mui/icons-material/AcUnit"; 
 
 export default function WeatherDisplay({ data }) {
   const getConditionIcon = (condition) => {
